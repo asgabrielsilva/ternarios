@@ -4,11 +4,16 @@
     //Leia a idade de uma pessoa e informe se ela já chegou à maioridade.Se ela ainda não chegou, informe quantos anos faltam para a maioridade.
 
     //Entrada
+    const idade = Number(prompt("informe sua idade:"));
+    const anosFaltantes = (18 - idade);
 
+    let resultadoNaTela;
 
     //Processamento
+    resultadoNaTela = (idade >= 18) ? `Já alcançou a maioridade` : `Faltam ${anosFaltantes} anos para alcançar a maioridade`;
 
 
     //Saída
+    document.write(resultadoNaTela);
     
 </script>

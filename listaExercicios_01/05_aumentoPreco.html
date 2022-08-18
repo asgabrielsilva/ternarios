@@ -8,11 +8,16 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
+    const precoPreAumento = Number(prompt("Informe o preço do produto:"));
 
+    let precoPosAumento;
+    let resultadoNaTela;
 
     //Processamento
+    resultadoNaTela = (precoPreAumento <= 280) ? `${precoPreAumento * 1.2}`
 
     
     //Saída
+    document.write(resultadoNaTela);
 
 </script>

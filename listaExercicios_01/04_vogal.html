@@ -4,11 +4,15 @@
     //Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     //Entrada
+    const caractere = prompt("Informe um caractere:").toUpperCase();
 
+    let resultadoNaTela;
 
     //Processamento
+    resultadoNaTela = (caractere === "A" || caractere === "E" || caractere === "I" || caractere === "O" || caractere === "U") ? `É uma vogal` : `Não é uma vogal`;
 
     
     //Saída
+    document.write(resultadoNaTela);
 
 </script>
