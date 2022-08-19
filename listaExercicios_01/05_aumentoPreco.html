@@ -10,11 +10,11 @@
     //Entrada
     const precoPreAumento = Number(prompt("Informe o preço do produto:"));
 
-    let precoPosAumento;
+    
     let resultadoNaTela;
 
     //Processamento
-    resultadoNaTela = (precoPreAumento <= 280) ? `${precoPreAumento * 1.2}`
+    resultadoNaTela = (precoPreAumento <= 280) ? `${(precoPreAumento * 1.2).toFixed(2)}` : (precoPreAumento <= 700) ? `${(precoPreAumento * 1.15).toFixed(2)}` : (precoPreAumento <= 1500) ? `${(precoPreAumento * 1.1).toFixed(2)}` : `${(precoPreAumento * 1.05).toFixed(2)}`;
 
     
     //Saída

@@ -10,11 +10,14 @@
     // Entre 5.9 e zero            E
 
     //Entrada
+    const nota = Number(prompt("Informe sua nota:"));
 
+    let resultadoNaTela;
 
     //Processamento
+    resultadoNaTela = (nota <= 10 && nota >= 9) ? `Você tirou um A` : (nota <= 8.9 && nota >= 8) ? `Você tirou um B` :(nota <= 7.9 && nota >= 7) ? `Você tirou um C` :(nota <= 6.9 && nota >= 6) ? `Você tirou um D` :(nota <= 5.9 && nota >= 0) ? `Você tirou um E` : `Apenas funciona com notas de 0-10, e numeros decimais deve se usar um .(ponto) ao invés de uma ,(vírgula)`;
 
     
     //Saída
-
+    document.write(resultadoNaTela);
 </script>

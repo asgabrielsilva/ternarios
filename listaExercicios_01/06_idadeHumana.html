@@ -8,11 +8,15 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const idadeCao = Number(prompt("Informe a idade de seu cão:"));
+    const porteCao = prompt("Informe o porte do seu cão com P(pequeno), M(médio) e G(grande)").toUpperCase();
 
+    let resultadoNaTela;
 
     //Processamento
-
+    resultadoNaTela = (porteCao === "P") ? (idadeCao * 5) : (porteCao === "M") ? (idadeCao * 6) : (idadeCao * 7)
     
     //Saída
+    document.write(`O seu cão possui ${resultadoNaTela} anos em idade de cachorro`)
 
 </script>

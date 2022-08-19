@@ -8,11 +8,15 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
+    let valorHora = Number(prompt("Informe quano ganha por hora:"));
+    const horaTrabalhada = Number(prompt("Informe quantas horas foram trabalhadas:"));
+    const salario = horaTrabalhada * valorHora
 
+    let resultadoNaTela;
 
     //Processamento
-
+    resultadoNaTela = (horaTrabalhada <= 45) ? (valorHora) : (horaTrabalhada <= 60) ? (valorHora * 1.2) : (valorHora * 1.3);
     
     //Saída
-
+    document.write(`Seu salário a ser recebido sera ${salario.toFixed(2)} e cada hora valeu ${valorHora.toFixed(2)}`)
 </script>
